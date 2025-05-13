@@ -1,0 +1,35 @@
+@use '@/styles/variables' as *;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $background-color;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  color: $primary-text-color;
+  margin-bottom: 20px;
+}
+
+.home__start-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  color: $white-1;
+  background-color: $blue-1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home__start-button:hover {
+  background-color: $blue-2;
+}
